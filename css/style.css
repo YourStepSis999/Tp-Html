@@ -1,14 +1,46 @@
-h1 { 
-    font-family: "Yeezy";
-}
+body {
+    background-image: url('/images/background.jpg');
+    margin:0;
+  }
 
-@font-face {
-    font-family: "Yeezy";
-    src: url("../font/vcr_osd_mono/webfontkit/webfontkit-20220406-102053/vcr_osd_mono_1.001-webfont.woff2") format("woff2"),
-         url("../font/vcr_osd_mono/webfontkit/webfontkit-20220406-102053/vcr_osd_mono_1.001-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
+  
 
-}
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #010101;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    
+  }
+  
+  
+  
+  .menu a {
+    float: right;
+    display: block;
+    color: #fefdfd;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .menu a:hover:not(.active) {
+    background-color: #010101;
+  }
+  
+  .menu  a:hover{
+    color: #5f43b2;
+  }
 
+  .menu a:hover{
+    color: #fefdfd;
+  }
 
+  
+  .active {
+    background-color: #5f43b2;
+  }
