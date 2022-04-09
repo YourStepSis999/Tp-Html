@@ -1,7 +1,7 @@
 body {
     background-image: url('/images/background.jpg');
     margin:0;
-    
+    z-index: -1;
   }
 
   
@@ -49,4 +49,11 @@ body {
   .active {
     background-color: #5f43b2
     
+  }
+
+  .titre {
+    position: fixed;
+    right: 200px;
+    color: #fefdfd;
+    font-size: 100px;
   }
