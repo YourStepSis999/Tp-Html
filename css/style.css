@@ -134,6 +134,12 @@ body {
   padding: 20px;
 }
 
+.Gear p {
+  text-align: center;
+  color:#010101;
+  font-size: 45px;
+}
+
 .Gear-container {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -147,6 +153,12 @@ body {
   font-size: 40px;
   text-align: center;
   justify-content: center;
+}
+
+.About p {
+  text-align: center;
+  color:#010101;
+  font-size: 45px;
 }
 
 .About-container {
@@ -172,6 +184,12 @@ body {
 .video iframe {
   position: relative;
 
+}
+
+.Me p {
+  text-align: center;
+  color:#010101;
+  font-size: 45px;
 }
 
 .Me-container {
