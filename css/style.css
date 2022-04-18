@@ -8,8 +8,6 @@
   padding: 0;
 }
 
-
-
 .main {
   height: 100%;
 
@@ -42,8 +40,6 @@ body {
   top: 0.75%;
 }
 
-
-
 .menu a {
 
   float: right;
@@ -57,16 +53,9 @@ body {
 
 }
 
-
-
 .menu a:hover {
   color: #5f43b2;
 }
-
-
-
-
-
 
 .home p {
   color: #fefdfd;
@@ -101,20 +90,24 @@ body {
   text-decoration: none
 }
 
-.Galerie p {
+.button a:hover {
+  opacity: 0.8;
+}
+
+.titre {
   text-align: center;
-  color:#010101;
+  color: #010101;
   font-size: 45px;
 }
 
-.Galerie-Container {
+.galerie-Container {
   display: grid;
   grid-template-columns: 50%;
   grid-template-rows: 80% 20%;
   padding: 20px;
 }
 
-.Galerie-item {
+.galerie-item {
 
   padding: 30px;
   font-size: 40px;
@@ -127,27 +120,22 @@ body {
   width: 700px;
 }
 
-.Galerie-containers {
+.galerie-containers {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto auto auto;
   padding: 20px;
 }
 
-.Gear p {
-  text-align: center;
-  color:#010101;
-  font-size: 45px;
-}
 
-.Gear-container {
+.gear-container {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
   padding: 20px;
 }
 
-.Gear-item {
+.gear-item {
 
   padding: 30px;
   font-size: 40px;
@@ -155,20 +143,16 @@ body {
   justify-content: center;
 }
 
-.About p {
-  text-align: center;
-  color:#010101;
-  font-size: 45px;
-}
 
-.About-container {
+
+.about-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-template-rows: 80% 20%;
+  grid-template-rows: 70% 20% 10%;
   padding: 20px;
 }
 
-.About-item {
+.about-item {
 
   padding: 30px;
   font-size: 40px;
@@ -176,7 +160,7 @@ body {
   justify-content: center;
 }
 
-.About-image {
+.about-image {
   height: 200px;
   width: 300px;
 }
@@ -186,19 +170,15 @@ body {
 
 }
 
-.Me p {
-  text-align: center;
-  color:#010101;
-  font-size: 45px;
-}
 
-.Me-container {
+
+.me-container {
   display: grid;
   grid-template-columns: 50% 50%;
   padding: 20px;
 }
 
-.Me-item {
+.me-item {
   padding: 30px;
   font-size: 40px;
   text-align: center;
@@ -321,4 +301,41 @@ body {
   padding: 15px 50px;
   font-weight: bold;
   float: right;
+}
+
+.Contact {
+  font-family: "Yeezy";
+  color: #010101;
+  text-align: center;
+  display: inline-block;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 2.3%;
+  padding-right: 2.3%;
+  font-size: 25px;
+  border-style: solid;
+  border-color: #fefdfd;
+  border-width: medium;
+  background-color: lightgrey;
+  text-decoration: none
+}
+
+.Contact:hover {
+  opacity: 0.8;
+}
+
+.text-about {
+
+}
+
+.text-me {
+
+}
+
+.text-galerie {
+
+}
+
+.text-gear {
+
 }
