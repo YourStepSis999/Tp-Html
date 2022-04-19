@@ -325,17 +325,22 @@ body {
 }
 
 .text-about {
-
+  font-family: 'Square Peg', serif;
+  
 }
 
 .text-me {
+  font-family: 'Square Peg', serif;
+  text-align: left;
 
 }
 
 .text-galerie {
+  font-family: 'Square Peg', serif;
+ 
 
 }
 
 .text-gear {
-
+  font-family: 'Square Peg', serif;
 }

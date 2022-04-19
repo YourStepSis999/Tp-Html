@@ -1,6 +1,10 @@
-body { 
+ .menu, .home, .titre, .footer { 
     font-family: "Yeezy";
 }
+
+
+
+
 
 @font-face {
     font-family: "Yeezy";
