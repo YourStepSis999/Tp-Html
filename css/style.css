@@ -150,14 +150,14 @@ body {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: 70% 20% 10%;
-  
+
 }
 
 .about-item {
-  
+
   font-size: 30px;
   text-align: center;
-  
+
 }
 
 .about-image {
@@ -165,7 +165,7 @@ body {
   width: 300px;
 }
 
-.text-about{
+.text-about {
   height: 200px;
   width: 300px;
   padding-left: 17%;
@@ -309,7 +309,7 @@ body {
   float: right;
 }
 
-.Contact{
+.Contact {
   font-family: "Yeezy";
   padding-top: 1%;
   padding-bottom: 1%;
@@ -325,7 +325,7 @@ body {
 
 .text-about {
   font-family: 'Square Peg', serif;
-  
+
 }
 
 .text-me {
@@ -336,7 +336,7 @@ body {
 
 .text-galerie {
   font-family: 'Square Peg', serif;
- 
+
 
 }
 

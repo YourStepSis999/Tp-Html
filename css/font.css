@@ -1,15 +1,15 @@
- .menu, .home, .titre, .footer { 
+.menu,
+.home,
+.titre,
+.footer {
     font-family: "Yeezy";
 }
-
-
-
 
 
 @font-face {
     font-family: "Yeezy";
     src: url("../font/vcr_osd_mono/webfontkit/webfontkit-20220406-102053/vcr_osd_mono_1.001-webfont.woff2") format("woff2"),
-         url("../font/vcr_osd_mono/webfontkit/webfontkit-20220406-102053/vcr_osd_mono_1.001-webfont.woff") format("woff");
+        url("../font/vcr_osd_mono/webfontkit/webfontkit-20220406-102053/vcr_osd_mono_1.001-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 
