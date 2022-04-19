@@ -87,7 +87,7 @@ body {
   border-color: #fefdfd;
   border-width: medium;
   background-color: #5f43b2;
-  text-decoration: none
+  text-decoration: none;
 }
 
 .button a:hover {
@@ -146,23 +146,29 @@ body {
 
 
 .about-container {
+
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: 70% 20% 10%;
-  padding: 20px;
+  
 }
 
 .about-item {
-
-  padding: 30px;
-  font-size: 40px;
+  
+  font-size: 30px;
   text-align: center;
-  justify-content: center;
+  
 }
 
 .about-image {
   height: 200px;
   width: 300px;
+}
+
+.text-about{
+  height: 200px;
+  width: 300px;
+  padding-left: 17%;
 }
 
 .video iframe {
@@ -303,21 +309,14 @@ body {
   float: right;
 }
 
-.Contact {
+.Contact{
   font-family: "Yeezy";
-  color: #010101;
-  text-align: center;
-  display: inline-block;
   padding-top: 1%;
   padding-bottom: 1%;
   padding-left: 2.3%;
   padding-right: 2.3%;
   font-size: 25px;
-  border-style: solid;
-  border-color: #fefdfd;
-  border-width: medium;
-  background-color: lightgrey;
-  text-decoration: none
+  border: none;
 }
 
 .Contact:hover {
