@@ -1,3 +1,9 @@
+/*
+Auteur : Charles-Olivier Lefebvre
+Da : 2130875
+Session : H2022
+*/
+
 body {
   background-color: #fefdfd;
   padding: 0;
@@ -19,8 +25,8 @@ body {
   opacity: 0.8;
 }
 
-
 /*--MENU SECTION--*/
+
 .menu {
   position: sticky;
   list-style-type: none;
@@ -34,15 +40,14 @@ body {
   z-index: 1;
 }
 
-#menu-image {
+.menu-image {
   position: fixed;
-  height: 8%;
+  height: 4vmax;
   left: 2%;
-  top: 0.75%;
+  top: 1%;
 }
 
 .menu a {
-
   float: right;
   color: #fefdfd;
   text-align: bottom;
@@ -50,8 +55,6 @@ body {
   padding: 1%;
   text-decoration: none;
   font-size: 25px;
-
-
 }
 
 .menu a:hover {
@@ -123,7 +126,6 @@ body {
 }
 
 .galerie-item {
-
   padding: 30px;
   font-size: 40px;
   text-align: center;
@@ -131,15 +133,7 @@ body {
 }
 
 .text-galerie {
-  font-family: 'Square Peg', serif;
-
-}
-
-/*--GRID SECTION--*/
-
-.grid-image {
-  height: 500px;
-  width: 700px;
+  font-family: "Square Peg", serif;
 }
 
 .galerie-containers {
@@ -147,6 +141,10 @@ body {
   grid-template-columns: 50% 50%;
   grid-template-rows: auto auto auto;
   padding: 20px;
+}
+
+.galerie-image {
+  width: 32vmax;
 }
 
 /*--GEAR SECTION--*/
@@ -159,7 +157,6 @@ body {
 }
 
 .gear-item {
-
   padding: 30px;
   font-size: 40px;
   text-align: center;
@@ -167,36 +164,34 @@ body {
 }
 
 .text-gear {
-  font-family: 'Square Peg', serif;
+  font-family: "Square Peg", serif;
+}
+
+.gear-image {
+  width: 32vmax;
 }
 
 /*--ABOUT SECTION--*/
 
 .about-container {
-
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: 70% 20% 10%;
-
 }
 
 .about-item {
-
-  font-size: 30px;
   text-align: center;
-
+  font-size: 30px;
 }
 
 .about-image {
-  height: 200px;
-  width: 300px;
+  width: 20vmax;
 }
 
 .text-about {
+  padding: 0.5%;
   height: 200px;
-  width: 300px;
-  padding-left: 20%;
-  font-family: 'Square Peg', serif;
+  font-family: "Square Peg", serif;
 }
 
 /*--ME SECTION--*/
@@ -215,9 +210,9 @@ body {
 }
 
 .text-me {
-  font-family: 'Square Peg', serif;
+  font-family: "Square Peg", serif;
   text-align: left;
-
+  padding: 1%;
 }
 
 /*--FOOTER SECTION--*/
