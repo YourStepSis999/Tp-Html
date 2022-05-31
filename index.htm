@@ -14,12 +14,13 @@
     <link rel="stylesheet" href="css\font.css" type="text/css" charset="utf-8" />
     <link rel="stylesheet" href="css\style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Square Peg">
-    <script src="javascript.js"></script>
+    <script src="js/javascript.js"></script>
 
     <title>Jhone's Photography </title>
+    
 </head>
 
-<body>
+<body onload="rememberLanguage()">
 
 
     <!--MENU SECTION-->
@@ -28,11 +29,11 @@
         <img class="menu-image" src="../images/logo_blanc.png" alt="error">
         <div class="menu-texte">
 
-            <a href="#me">ME</a>
-            <a href="#about">ABOUT</a>
-            <a href="#gear">GEAR</a>
-            <a href="#galerie">GALERIE</a>
-            <a href="#home">HOME</a>
+            <a href="#me" id="moi1" c>MOI</a>
+            <a href="#about" id="apropos1" >À PROPOS</a>
+            <a href="#gear" id="gear1" >ÉQUIPEMENT</a>
+            <a href="#galerie" id="galerie3" >GALERIE</a>
+            <a href="#home" id="home1" >ACCEUIL</a>
 
         </div>
 
@@ -46,20 +47,21 @@
                 <p>Jhone's</p>
                 <p>Photography</p>
             </div>
-            <button class="button"><a href="#galerie">GALERIE</a></button>
+            <div class="button"><a id="galerie1" href="#galerie">GALERIE</a></div>
+
         </div>
 
     </div>
 
     <!--GALERIE SECTION-->
 
-    <div class="galerie" id="galerie">
+    <div class="galerie" id = "galerie">
         <br>
         <br>
         <br>
         <br>
         <br>
-        <p class="titre">GALERIE</p>
+        <p class="titre" id="galerie2">GALERIE</p>
 
         <div class="galerie-containers">
             <div class="galerie-container">
@@ -67,7 +69,7 @@
                         src="../images/16-60288fd1630fe__880(1).jpg" alt="error">
                 </div>
                 <div class="galerie-item">
-                    <p class="text-galerie">Cette photo est une de mes photo les plus dur que j’ai pris. J'ai du me cacher
+                    <p class="text-galerie" id="text1">Cette photo est une de mes photo les plus dur que j’ai pris. J'ai du me cacher
                         pendant des heures dans la foret en attendant qu’un animal interagissent avec mes alentours et
                         quand cela est finalement arrivé j’ai pris cette photo. - Antoine</p>
                 </div>
@@ -79,7 +81,7 @@
                 <div class="galerie-item"><img class="galerie-image"
                         src="../images/364eb717be7b03d9adf01206571ca32e.jpg" alt="error" ></div>
                 <div class="galerie-item">
-                    <p class="text-galerie">Cette photo a été pris sur une plage dans mon voyage de famille avec mes
+                    <p class="text-galerie" id="text2">Cette photo a été pris sur une plage dans mon voyage de famille avec mes
                         deux gosses et ma magnifique femme. C'était l'un des seul voyages que nous
                         avons fait de tout notre relation amoureuse ce moment était le plus beau jours de ma vie... -
                         William
@@ -91,7 +93,7 @@
                 <div class="galerie-item"><img class="galerie-image" src="../images/stock-photo-142638489.jpg" alt="error">
                 </div>
                 <div class="galerie-item">
-                    <p class="text-galerie">Cette photo a été pris en juin 2008, cette photo représente beaucoup pour
+                    <p class="text-galerie" id="text3">Cette photo a été pris en juin 2008, cette photo représente beaucoup pour
                         moi car ces une photo de mon père avec sa voiture de rêve. Cette photo m’a pris des millions
                         d’essaie avant de l’avoir parfaitement. Mon père la accrocher dans son bureau avant de mourir
                         ces donc pour sa que j’adore autant cette photo. - Jhone</p>
@@ -102,7 +104,7 @@
                 <div class="galerie-item"><img class="galerie-image"
                         src="../images/NorthBroadSt_Landscape_1_M.Edlow.jpg" alt="error"></div>
                 <div class="galerie-item">
-                    <p class="text-galerie">Cette photo est une photo de ma ville natale, cette place est la place ou j'ai le plus de souvenir de mon enfance.
+                    <p class="text-galerie" id="text4">Cette photo est une photo de ma ville natale, cette place est la place ou j'ai le plus de souvenir de mon enfance.
                         J'ai passer tout mon temps ici en tant qu'adolescante a faire du skateboard tout les jours. -
                         Jessica</p>
                 </div>
@@ -112,7 +114,7 @@
                 <div class="galerie-item"><img class="galerie-image"
                         src="../images/tumblr_pou18b3im91r0zrk0_1280.jpg" alt="error"></div>
                 <div class="galerie-item">
-                    <p class="text-galerie">Cette photo a été pris avec une caméra plus vielle que moi. Une camera des
+                    <p class="text-galerie" id="text5">Cette photo a été pris avec une caméra plus vielle que moi. Une camera des
                         années 80 avec du film 35mm j'adore l'effet que les caméra comme celle ci amène au photo.
                         On dirait que la photo prend vie litéralement. - Carolle
                     </p>
@@ -124,7 +126,7 @@
                         src="../images/AdobeStock_212674334(1).jpeg" alt="error">
                 </div>
                 <div class="galerie-item">
-                    <p class="text-galerie">Cette photo a été pris pendant une soirée de camping. Cela fesait mainteant
+                    <p class="text-galerie" id="text6">Cette photo a été pris pendant une soirée de camping. Cela fesait mainteant
                         3 jours que j'était présent sur place, mais les 2 premier jours on été nuageux le troisième, la
                         météo était parfaite j'ai donc pu prendre cette magnifique photo. - Carolle</p>
                 </div>
@@ -141,12 +143,12 @@
         <br>
         <br>
         <br>
-        <p class="titre">GEAR</p>
+        <p class="titre" id="gear2">ÉQUIPEMENT</p>
 
         <div class="gear-container">
             <div class="gear-item"><img class="gear-image" src="../images/610UwD+u3CL._AC_SL1440_.jpg" alt="error"></div>
             <div class="gear-item">
-                <p class="text-gear">Cette caméra vien des années 80. Elle n'a peu-etre pas la meme technologie que les
+                <p class="text-gear" id="text7">Cette caméra vien des années 80. Elle n'a peu-etre pas la meme technologie que les
                     nouvelle caméra, mais les photo qui sorte de se chef d'oeuvre sont tout simplement magnifique. La
                     profondeur des photos de cette caméra est tellement belle qu'on dirait que c'est la réalité.</p>
             </div>
@@ -154,7 +156,7 @@
 
         <div class="gear-container">
             <div class="gear-item">
-                <p class="text-gear">Cette caméra est la plus cher de tout notre équipement, la caméra coute 3000$. Ce
+                <p class="text-gear" id="text8">Cette caméra est la plus cher de tout notre équipement, la caméra coute 3000$. Ce
                     prix est comprenable car elle est la caméra qui prend des photo avec la plus grand qualité au monde.
                     Cette caméra peut zoomer sur des kilomètre et la qualité serais encore clair. </p>
             </div>
@@ -165,9 +167,9 @@
         <div class="gear-container">
             <div class="gear-item"><img class="gear-image" src="../images/L35AF_Tina.Kino_002.jpg" alt="error" ></div>
             <div class="gear-item">
-                <p class="text-gear">L'appareil argentique Nikon L35 AF a été surnommé "Pikaichi" ou "top-notch"
+                <p class="text-gear" id="text9">L'appareil argentique Nikon L35 AF a été surnommé Pikaichi ou top-notch
                     (excellent) en raison de sa haute qualité et de la fiabilité de son objectif en verre multicouches.
-                    Cette caméra de type "point and shoot est l'une des meilleurs dans le millieux.</p>
+                    Cette caméra de type point and shoot est l'une des meilleurs dans le millieux.</p>
             </div>
         </div>
 
@@ -182,7 +184,7 @@
         <br>
         <br>
         <br>
-        <p class="titre">ABOUT</p>
+        <p class="titre" id="apropos2">À PROPOS</p>
 
         <div class="about-container">
             <div class="about-item"><img class="about-image"
@@ -199,28 +201,28 @@
 
         <div class="about-container">
             <div class="about-item">
-                <p class="text-about">Je m’appelle Carolle, je fait partie de Jhone’s photography depuis maintenant 5
+                <p class="text-about" id="text10">Je m’appelle Carolle, je fait partie de Jhone’s photography depuis maintenant 5
                     ans et ma specialité est de photographier des voiture.</p><button class="Contact"><a
-                        href="mailto:Jhonesphotography@gmail.com" style="text-decoration: none; color: #010101;">CONTACT
-                        ME</a></button>
+                        href="mailto:Jhonesphotography@gmail.com" style="text-decoration: none; color: #010101;" id="contact1">CONTACT
+                        MOI</a></button>
             </div>
             <div class="about-item">
-                <p class="text-about">Je m’appelle William, je fait partie de Jhone’s photography depuis maintenant 6
+                <p class="text-about" id="text11">Je m’appelle William, je fait partie de Jhone’s photography depuis maintenant 6
                     ans et j’adore photographier les étoiles.</p><button class="Contact"><a
-                        href="mailto:Jhonesphotography@gmail.com" style="text-decoration: none; color: #010101;">CONTACT
-                        ME</a></button>
+                        href="mailto:Jhonesphotography@gmail.com" style="text-decoration: none; color: #010101;" id="contact2">CONTACT
+                        MOI</a></button>
             </div>
             <div class="about-item">
-                <p class="text-about">Je m’appelle Antoine, je fait partie de Jhone’s photography depuis maintenant 2
+                <p class="text-about" id="text12">Je m’appelle Antoine, je fait partie de Jhone’s photography depuis maintenant 2
                     ans et j’adore photographier la nature et les animaux.</p><button class="Contact"><a
-                        href="mailto:Jhonesphotography@gmail.com" style="text-decoration: none; color: #010101;">CONTACT
-                        ME</a></button>
+                        href="mailto:Jhonesphotography@gmail.com" style="text-decoration: none; color: #010101;" id="contact3">CONTACT
+                        MOI</a></button>
             </div>
             <div class="about-item">
-                <p class="text-about">Je m’appelle Jessica, je fait parti de Jhone’s photography depuis 8 ans et je
+                <p class="text-about" id="text13">Je m’appelle Jessica, je fait parti de Jhone’s photography depuis 8 ans et je
                     photographie majoritairement des villes.</p><button class="Contact"><a
-                        href="mailto:Jhonesphotography@gmail.com" style="text-decoration: none; color: #010101;">CONTACT
-                        ME</a></button>
+                        href="mailto:Jhonesphotography@gmail.com" style="text-decoration: none; color: #010101;" id="contact4">CONTACT
+                        MOI</a></button>
             </div>
         </div>
     </div>
@@ -233,7 +235,7 @@
         <br>
         <br>
         <br>
-        <p class="titre">ME</p>
+        <p class="titre" id="moi2">MOI</p>
         <video width=100% height="350" controls>
             <source
                 src="../video/Y2Mate.is - Relaxing POV STREET photography in sunny Germany, Cologne (without talking)-DFdt5lMZ4u0-1080p-1650318949796.mp4" type="
@@ -246,16 +248,16 @@
             </div>
             <div class="me-item">
                 <div class="text-me">
-                    <p>Cette vidéo démontre comment nos photographe procède chaque jours pour prendre des magnifique
+                    <p id="text14">Cette vidéo démontre comment nos photographe procède chaque jours pour prendre des magnifique
                         photo. Certain prennent plus de temps a prendre des photos et
                         d’autre moins mais a la fin nos résultat sont toujours les meilleurs.</p>
-                    <p>Je m’appelle Jhone et je suis le créateur de Jhone’s photography. Ce groupe a été créer il y a
+                    <p id="text15">Je m’appelle Jhone et je suis le créateur de Jhone’s photography. Ce groupe a été créer il y a
                         maintenant 10 ans ayant comme but de reunir les meilleur photographe sur cette planète.
                         ce but n’a toujours pas été atteint,mais nous travaillons fort chaque jours pour essayer de
                         l’atteindre.</p>
                 </div>
                 <button class="Contact"><a href="mailto:Jhonesphotography@gmail.com"
-                        style="text-decoration: none; color: #010101;">CONTACT ME</a></button>
+                        style="text-decoration: none; color: #010101;" id="contact6">CONTACT MOI</a></button>
             </div>
 
         </div>
@@ -270,14 +272,16 @@
         <div class="footer-left">
 
             <p class="footer-links">
-                <a href="#me">ME</a>
-                <a href="#about">ABOUT</a>
-                <a href="#gear">GEAR</a>
-                <a href="#galerie">GALERIE</a>
-                <a href="#home">HOME</a>
+                <a href="#home" id="home2">ACCEUIL</a>
+                <a href="#galerie" id="galerie4">GALERIE</a>
+                <a href="#gear" id="gear3">ÉQUIPEMENT</a>
+                <a href="#about" id="apropos3">À PROPOS</a>
+                <a href="#me" id="moi3">MOI</a>
+               
             </p>
 
             <p class="footer-company-name">Jhone's Photography © 2009</p>
+            
 
             <div class="footer-icons">
 
@@ -288,20 +292,25 @@
             
 
             </div>
-            <button>FR</button>
-            <button>EN</button>
-
+            <button onclick="Francais()" id="FR">FR</button>
+            <button onclick="English()" id="EN">EN</button>
+            <br>
+            <p id="statsEN"></p> 
+            <br>
+            <p id="statsFR"></p>
+            
         </div>
-
+        
         <div class="footer-right">
 
-            <p>Contact Us</p>
+        
+            <p id="contact5">Contact nous</p>
 
             <form action="mailto:Jhonesphotography@gmail.com" method="post">
 
                 <input type="text" name="email" placeholder="Email">
                 <textarea name="message" placeholder="message"></textarea>
-                <button>Send</button>
+                <button id="envoyer1">Envoyer</button>
                 
             </form>
 
