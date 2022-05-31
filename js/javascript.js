@@ -8,7 +8,7 @@ Session : H2022
 
 
 function rememberLanguage(){
-    if (localStorage.getItem('EN') === 'true') {
+    if (localStorage.getItem("EN") === "true") {
         document.getElementById("EN").disabled = true;
         changeTextEnglish();
         
@@ -19,11 +19,17 @@ function rememberLanguage(){
    
 }
 
+function date(){
+    var date = (new Date()).toISOString().split("T")[0];
+    document.getElementById("date").innerHTML = "date : " + date;
+}
+
+
 
 function English() {
-    localStorage.setItem('EN', 'true');
-    if (localStorage.getItem('FR') === 'true'){
-        localStorage.removeItem('FR');
+    localStorage.setItem("EN", "true");
+    if (localStorage.getItem("FR") === "true"){
+        localStorage.removeItem("FR");
     }
     document.getElementById("EN").disabled = true;
     document.getElementById("FR").disabled = false;
@@ -33,9 +39,9 @@ function English() {
 }
 
 function Francais() {
-    localStorage.setItem('FR', 'true');
-    if (localStorage.getItem('EN') === 'true'){
-        localStorage.removeItem('EN');
+    localStorage.setItem("FR", "true");
+    if (localStorage.getItem("EN") === "true"){
+        localStorage.removeItem("EN");
     }
     document.getElementById("FR").disabled = true;
     document.getElementById("EN").disabled = false;
@@ -43,6 +49,7 @@ function Francais() {
     delay(1000).then(() => fadeInText());
     delay(600).then(() => changeTextFrancais()); 
 }
+
 
 
 function delay(time) {
@@ -292,3 +299,4 @@ function fadeInText(){
     document.getElementById("statsFR").style.transition = "opacity 0.65s linear 0s";
     document.getElementById("statsFR").style.opacity = 1;
 }
+
