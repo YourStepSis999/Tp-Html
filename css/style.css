@@ -349,22 +349,3 @@ body {
   margin-bottom: 5px;
 }
 
-#statsEN  {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 20px;
-  color: #fefdfd;
-  text-align: center;
-  margin-right: 3px;
-
-}
-
-#statsFR  {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 20px;
-  color: #fefdfd;
-  text-align: center;
-  margin-right: 3px;
-}
-
