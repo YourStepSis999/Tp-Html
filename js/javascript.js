@@ -4,9 +4,6 @@ Da : 2130875
 Session : H2022
 */
 
-
-
-
 function rememberLanguage(){
     if (localStorage.getItem("EN") === "true") {
         document.getElementById("EN").disabled = true;
@@ -16,9 +13,17 @@ function rememberLanguage(){
         document.getElementById("FR").disabled = true;
     }
 
-   
+    if(localStorage.getItem("25") == "true"){
+        display25();
+    } else if(localStorage.getItem("50") == "true"){
+        display50();
+    } else if(localStorage.getItem("75") == "true"){
+        display75();
+    }else {
+    display100();
+    }
+    
 }
-
 function date(){
     var date = (new Date()).toISOString().split("T")[0];
     document.getElementById("date").innerHTML = "date : " + date;
@@ -29,7 +34,18 @@ function goTop(){
 }
 
 function display25() {
-    document.getElementById("vint-cinq").disabled = false;
+    localStorage.setItem("25", "true");
+    if (localStorage.getItem("100") === "true"){
+        localStorage.removeItem("100");
+    }
+    if (localStorage.getItem("75") === "true"){
+        localStorage.removeItem("75");
+    }
+    if (localStorage.getItem("50") === "true"){
+        localStorage.removeItem("50");
+    }
+
+    document.getElementById("cinquante").disabled = false;
     document.getElementById("soixante-quinze").disabled = false;
     document.getElementById("cent").disabled = false;
     document.getElementById("vint-cinq").disabled = true;
@@ -38,44 +54,132 @@ function display25() {
     document.getElementById("gear").style.filter = "brightness(25%)";
     document.getElementById("about").style.filter = "brightness(25%)";
     document.getElementById("me").style.filter = "brightness(25%)";
+    document.getElementById("text1").style.filter = "brightness(25%)";
+    document.getElementById("text3").style.filter = "brightness(25%)";
+    document.getElementById("text4").style.filter = "brightness(25%)";
+    document.getElementById("text5").style.filter = "brightness(25%)";
+    document.getElementById("text6").style.filter = "brightness(25%)";
+    document.getElementById("text7").style.filter = "brightness(25%)";
+    document.getElementById("text8").style.filter = "brightness(25%)";
+    document.getElementById("text9").style.filter = "brightness(25%)";
+    document.getElementById("text10").style.filter= "brightness(25%)";
+    document.getElementById("text11").style.filter = "brightness(25%)";
+    document.getElementById("text12").style.filter = "brightness(25%)";
+    document.getElementById("text13").style.filter = "brightness(25%)";
+    document.getElementById("text14").style.filter = "brightness(25%)";
+    document.getElementById("text15").style.filter = "brightness(25%)";
+    
 }
 
  
 function display50() {
-    document.getElementById("vint-cinq").disabled = false;
+    localStorage.setItem("50", "true");
+    if (localStorage.getItem("100") === "true"){
+        localStorage.removeItem("100");
+    }
+    if (localStorage.getItem("75") === "true"){
+        localStorage.removeItem("75");
+    }
+    if (localStorage.getItem("25") === "true"){
+        localStorage.removeItem("25");
+    }
+
+    document.getElementById("cent").disabled = false;
     document.getElementById("soixante-quinze").disabled = false;
-    document.getElementById("cent").disabled = true;
+    document.getElementById("cinquante").disabled = true;
     document.getElementById("vint-cinq").disabled = false;
     document.getElementById("home").style.filter = "brightness(50%)";
     document.getElementById("galerie").style.filter = "brightness(50%)";
     document.getElementById("gear").style.filter = "brightness(50%)";
     document.getElementById("about").style.filter = "brightness(50%)";
     document.getElementById("me").style.filter = "brightness(50%)";
+    document.getElementById("text1").style.filter = "brightness(50%)";
+    document.getElementById("text3").style.filter = "brightness(50%)";
+    document.getElementById("text4").style.filter = "brightness(50%)";
+    document.getElementById("text5").style.filter = "brightness(50%)";
+    document.getElementById("text6").style.filter = "brightness(50%)";
+    document.getElementById("text7").style.filter = "brightness(50%)";
+    document.getElementById("text8").style.filter = "brightness(50%)";
+    document.getElementById("text9").style.filter = "brightness(50%)";
+    document.getElementById("text10").style.filter = "brightness(50%)";
+    document.getElementById("text11").style.filter = "brightness(50%)";
+    document.getElementById("text12").style.filter = "brightness(50%)";
+    document.getElementById("text13").style.filter = "brightness(50%)";
+    document.getElementById("text14").style.filter = "brightness(50%)";
+    document.getElementById("text15").style.filter = "brightness(50%)";
 }
 
 
 function display75() {
+    localStorage.setItem("75", "true");
+    if (localStorage.getItem("100") === "true"){
+        localStorage.removeItem("100");
+    }
+    if (localStorage.getItem("25") === "true"){
+        localStorage.removeItem("25");
+    }
+    if (localStorage.getItem("50") === "true"){
+        localStorage.removeItem("50");
+    }
     document.getElementById("vint-cinq").disabled = false;
     document.getElementById("soixante-quinze").disabled = true;
     document.getElementById("cent").disabled = false;
-    document.getElementById("vint-cinq").disabled = false;
+    document.getElementById("cinquante").disabled = false;
     document.getElementById("home").style.filter = "brightness(75%)";
     document.getElementById("galerie").style.filter = "brightness(75%)";
     document.getElementById("gear").style.filter = "brightness(75%)";
     document.getElementById("about").style.filter = "brightness(75%)";
     document.getElementById("me").style.filter = "brightness(75%)";
+    document.getElementById("text1").style.filter = "brightness(75%)";
+    document.getElementById("text3").style.filter = "brightness(75%)";
+    document.getElementById("text4").style.filter = "brightness(75%)";
+    document.getElementById("text5").style.filter = "brightness(75%)";
+    document.getElementById("text6").style.filter = "brightness(75%)";
+    document.getElementById("text7").style.filter = "brightness(75%)";
+    document.getElementById("text8").style.filter = "brightness(75%)";
+    document.getElementById("text9").style.filter = "brightness(75%)";
+    document.getElementById("text10").style.filter = "brightness(75%)";
+    document.getElementById("text11").style.filter = "brightness(75%)";
+    document.getElementById("text12").style.filter = "brightness(75%)";
+    document.getElementById("text13").style.filter = "brightness(75%)";
+    document.getElementById("text14").style.filter = "brightness(75%)";
+    document.getElementById("text15").style.filter = "brightness(75%)";
 }
 
 function display100() {
+    localStorage.setItem("100", "true");
+    if (localStorage.getItem("25") === "true"){
+        localStorage.removeItem("25");
+    }
+    if (localStorage.getItem("75") === "true"){
+        localStorage.removeItem("75");
+    }
+    if (localStorage.getItem("50") === "true"){
+        localStorage.removeItem("50");
+    }
     document.getElementById("vint-cinq").disabled = false;
     document.getElementById("soixante-quinze").disabled = false;
     document.getElementById("cent").disabled = true;
-    document.getElementById("vint-cinq").disabled = false;
+    document.getElementById("cinquante").disabled = false;
     document.getElementById("home").style.filter = "brightness(100%)";
     document.getElementById("galerie").style.filter = "brightness(100%)";
     document.getElementById("gear").style.filter = "brightness(100%)";
     document.getElementById("about").style.filter = "brightness(100%)";
     document.getElementById("me").style.filter = "brightness(100%)";
+    document.getElementById("text1").style.filter = "brightness(100%)";
+    document.getElementById("text3").style.filter = "brightness(100%)";
+    document.getElementById("text4").style.filter = "brightness(100%)";
+    document.getElementById("text5").style.filter = "brightness(100%)";
+    document.getElementById("text6").style.filter = "brightness(100%)";
+    document.getElementById("text7").style.filter = "brightness(100%)";
+    document.getElementById("text8").style.filter = "brightness(100%)";
+    document.getElementById("text9").style.filter = "brightness(100%)";
+    document.getElementById("text10").style.filter = "brightness(100%)";
+    document.getElementById("text11").style.filter = "brightness(100%)";
+    document.getElementById("text12").style.filter = "brightness(100%)";
+    document.getElementById("text13").style.filter = "brightness(100%)";
+    document.getElementById("text14").style.filter = "brightness(100%)";
+    document.getElementById("text15").style.filter = "brightness(100%)";
 }
 
 
