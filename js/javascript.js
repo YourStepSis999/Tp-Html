@@ -239,7 +239,7 @@ function changeTextEnglish(){
     document.getElementById("contact2").innerHTML = "CONTACT ME";
     document.getElementById("contact3").innerHTML = "CONTACT ME";
     document.getElementById("contact4").innerHTML = "CONTACT ME";
-    document.getElementById("contact5").innerHTML = "CONTACT US";
+    document.getElementById("contact5").innerHTML = "Contact us";
     document.getElementById("contact5").innerHTML = "CONTACT ME";
     document.getElementById("contact6").innerHTML = "CONTACT ME";
     document.getElementById("envoyer1").innerHTML = "SEND";
@@ -282,7 +282,7 @@ function changeTextFrancais(){
     document.getElementById("contact2").innerHTML = "CONTACTER MOI";
     document.getElementById("contact3").innerHTML = "CONTACTER MOI";
     document.getElementById("contact4").innerHTML = "CONTACTER MOI";
-    document.getElementById("contact5").innerHTML = "CONTACT NOUS";
+    document.getElementById("contact5").innerHTML = "Contact Nous";
     document.getElementById("contact6").innerHTML = "CONTACT MOI";
     document.getElementById("envoyer1").innerHTML = "ENVOYER";
     document.getElementById("text1").innerHTML = "Cette photo est une de mes photo les plus dur que j’ai pris. J'ai du me cacher pendant des heures dans la foret en attendant qu’un animal interagissent avec mes alentours et quand cela est finalement arrivé j’ai pris cette photo. - Antoine";
