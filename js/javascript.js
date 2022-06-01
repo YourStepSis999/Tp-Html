@@ -24,9 +24,65 @@ function date(){
     document.getElementById("date").innerHTML = "date : " + date;
 }
 
+function goTop(){
+ window.scrollTo({top : 0, behavior:"smooth"});
+}
+
+function display25() {
+    document.getElementById("vint-cinq").disabled = false;
+    document.getElementById("soixante-quinze").disabled = false;
+    document.getElementById("cent").disabled = false;
+    document.getElementById("vint-cinq").disabled = true;
+    document.getElementById("home").style.filter = "brightness(25%)";
+    document.getElementById("galerie").style.filter = "brightness(25%)";
+    document.getElementById("gear").style.filter = "brightness(25%)";
+    document.getElementById("about").style.filter = "brightness(25%)";
+    document.getElementById("me").style.filter = "brightness(25%)";
+}
+
+ 
+function display50() {
+    document.getElementById("vint-cinq").disabled = false;
+    document.getElementById("soixante-quinze").disabled = false;
+    document.getElementById("cent").disabled = true;
+    document.getElementById("vint-cinq").disabled = false;
+    document.getElementById("home").style.filter = "brightness(50%)";
+    document.getElementById("galerie").style.filter = "brightness(50%)";
+    document.getElementById("gear").style.filter = "brightness(50%)";
+    document.getElementById("about").style.filter = "brightness(50%)";
+    document.getElementById("me").style.filter = "brightness(50%)";
+}
+
+
+function display75() {
+    document.getElementById("vint-cinq").disabled = false;
+    document.getElementById("soixante-quinze").disabled = true;
+    document.getElementById("cent").disabled = false;
+    document.getElementById("vint-cinq").disabled = false;
+    document.getElementById("home").style.filter = "brightness(75%)";
+    document.getElementById("galerie").style.filter = "brightness(75%)";
+    document.getElementById("gear").style.filter = "brightness(75%)";
+    document.getElementById("about").style.filter = "brightness(75%)";
+    document.getElementById("me").style.filter = "brightness(75%)";
+}
+
+function display100() {
+    document.getElementById("vint-cinq").disabled = false;
+    document.getElementById("soixante-quinze").disabled = false;
+    document.getElementById("cent").disabled = true;
+    document.getElementById("vint-cinq").disabled = false;
+    document.getElementById("home").style.filter = "brightness(100%)";
+    document.getElementById("galerie").style.filter = "brightness(100%)";
+    document.getElementById("gear").style.filter = "brightness(100%)";
+    document.getElementById("about").style.filter = "brightness(100%)";
+    document.getElementById("me").style.filter = "brightness(100%)";
+}
+
 
 
 function English() {
+    
+    document.documentElement.setAttribute("lang", 'en');
     localStorage.setItem("EN", "true");
     if (localStorage.getItem("FR") === "true"){
         localStorage.removeItem("FR");
@@ -36,10 +92,11 @@ function English() {
     fadeOutText();
     delay(1000).then(() => fadeInText());
     delay(600).then(() => changeTextEnglish()); 
-    scroll(0,0)
+    goTop();
 }
 
 function Francais() {
+    document.documentElement.setAttribute("lang", 'fr');
     localStorage.setItem("FR", "true");
     if (localStorage.getItem("EN") === "true"){
         localStorage.removeItem("EN");
@@ -49,7 +106,7 @@ function Francais() {
     fadeOutText();
     delay(1000).then(() => fadeInText());
     delay(600).then(() => changeTextFrancais()); 
-    scroll(0,0)
+    goTop();
 }
 
 

@@ -34,7 +34,7 @@
             <a href="#about" id="apropos1" tabindex="4">À PROPOS</a>
             <a href="#gear" id="gear1" tabindex="3">ÉQUIPEMENT</a>
             <a href="#galerie" id="galerie3" tabindex="2">GALERIE</a>
-            <a href="#home" id="home1" tabindex="1">ACCEUIL</a>
+            <a href="#home" id="home1" tabindex="1" o>ACCEUIL</a>
 
         </div>
 
@@ -45,7 +45,7 @@
     <div class="home" id="home">
         <div class="hero-image">
             <div class="text">
-                <p tabindex="6">Jhone's</p>
+                <p tabindex="6" >Jhone's</p>
                 <p tabindex="7">Photography</p>
             </div>
             <div class="button"><a id="galerie1" href="#galerie" tabindex="8">GALERIE</a></div>
@@ -67,7 +67,7 @@
         <div class="galerie-containers">
             <div class="galerie-container">
                 <div class="galerie-item"><img class="galerie-image"
-                        src="../images/animal.jpg" alt="error" tabindex="10">
+                        src="../images/animal.jpg" alt="error" tabindex="10" id="image1">
                 </div>
                 <div class="galerie-item">
                     <p class="text-galerie" id="text1" tabindex="11">Cette photo est une de mes photo les plus dur que j’ai pris. J'ai du me cacher
@@ -80,7 +80,7 @@
 
             <div class="galerie-container">
                 <div class="galerie-item"><img class="galerie-image"
-                        src="../images/plage.jpg" alt="error"  tabindex="12"></div>
+                        src="../images/plage.jpg" alt="error"  tabindex="12" id="image2"></div>
                 <div class="galerie-item">
                     <p class="text-galerie" id="text2" tabindex="13">Cette photo a été pris sur une plage dans mon voyage de famille avec mes
                         deux gosses et ma magnifique femme. C'était l'un des seul voyages que nous
@@ -296,8 +296,10 @@
             <button onclick="Francais()" id="FR" tabindex="57">FR</button>
             <button onclick="English()" id="EN" tabindex="58">EN</button>
             <p id="date" tabindex="59"></p>
-            
-            
+            <button onclick="display25()" id="vint-cinq" tabindex="57">25%</button>
+            <button onclick="display50()" id="cinquante" tabindex="58">50%</button>
+            <button onclick="display75()" id="soixante-quinze" tabindex="58">75%</button>
+            <button onclick="display100()" id="cent" tabindex="58">100%</button>
        
         </div>
         

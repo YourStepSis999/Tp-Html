@@ -3,6 +3,9 @@ Auteur : Charles-Olivier Lefebvre
 Da : 2130875
 Session : H2022
 */
+html {
+  scroll-behavior:smooth !important;
+}
 
 body {
   background-color: #fefdfd;
@@ -415,4 +418,22 @@ animation-duration: 3s;
   75%{background-color:greenyellow;}
   100%{background-color:5f43b2; left:0px; top:25px;}
 }
+
+#vint-cinq{
+font-size: 15px;
+}
+
+#cinquante{
+  font-size: 15px;
+}
+
+
+#soixante-quinze{
+  font-size: 15px;
+}
+
+#cent{
+  font-size: 15px;
+}
+
 
