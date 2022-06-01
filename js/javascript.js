@@ -36,6 +36,7 @@ function English() {
     fadeOutText();
     delay(1000).then(() => fadeInText());
     delay(600).then(() => changeTextEnglish()); 
+    scroll(0,0)
 }
 
 function Francais() {
@@ -48,6 +49,7 @@ function Francais() {
     fadeOutText();
     delay(1000).then(() => fadeInText());
     delay(600).then(() => changeTextFrancais()); 
+    scroll(0,0)
 }
 
 
