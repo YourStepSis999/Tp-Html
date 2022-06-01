@@ -283,7 +283,7 @@ function changeTextFrancais(){
     document.getElementById("contact3").innerHTML = "CONTACTER MOI";
     document.getElementById("contact4").innerHTML = "CONTACTER MOI";
     document.getElementById("contact5").innerHTML = "Contact Nous";
-    document.getElementById("contact6").innerHTML = "CONTACT MOI";
+    document.getElementById("contact6").innerHTML = "CONTACTER MOI";
     document.getElementById("envoyer1").innerHTML = "ENVOYER";
     document.getElementById("text1").innerHTML = "Cette photo est une de mes photo les plus dur que j’ai pris. J'ai du me cacher pendant des heures dans la foret en attendant qu’un animal interagissent avec mes alentours et quand cela est finalement arrivé j’ai pris cette photo. - Antoine";
     document.getElementById("text2").innerHTML = "Cette photo a été pris sur une plage dans mon voyage de famille avec mes deux gosses et ma magnifique femme. C'était l'un des seul voyages que nous avons fait de tout notre relation amoureuse ce moment était le plus beau jours de ma vie... -William";

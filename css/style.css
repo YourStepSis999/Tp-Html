@@ -907,7 +907,7 @@ color: #fefdfd;
     padding-bottom: 1%;
     padding-left: 2.3%;
     padding-right: 2.3%;
-    font-size: 15px;
+    font-size: 10px;
     border: none;
   }
   
@@ -943,6 +943,7 @@ color: #fefdfd;
     top: 0;
     width: 100%;
     z-index: 1;
+    height: 45px;
   }
   
   .menu-image {
@@ -1005,7 +1006,7 @@ color: #fefdfd;
   
   .home p {
     color: #fefdfd;
-    font-size: 80px;
+    font-size: 45px;
     padding: 0.5%;
     margin: 0;
   }
@@ -1021,7 +1022,7 @@ color: #fefdfd;
     font-family: "Yeezy";
     color: #fefdfd;
     right: 26%;
-    top: 28%;
+    top: 20%;
     text-align: center;
     display: inline-block;
     padding-top: 3%;
@@ -1058,7 +1059,7 @@ color: #fefdfd;
   
   .galerie-item {
     padding: 30px;
-    font-size: 40px;
+    font-size: 23px;
     text-align: center;
     justify-content: center;
   }
@@ -1075,7 +1076,7 @@ color: #fefdfd;
   }
   
   .galerie-image {
-    width: 32vmax;
+    width: 18vmax;
   }
   
   /*--GEAR SECTION--*/
@@ -1089,7 +1090,7 @@ color: #fefdfd;
   
   .gear-item {
     padding: 30px;
-    font-size: 40px;
+    font-size: 23px;
     text-align: center;
     justify-content: center;
   }
@@ -1099,7 +1100,7 @@ color: #fefdfd;
   }
   
   .gear-image {
-    width: 32vmax;
+    width: 18vmax;
   }
   
   /*--ABOUT SECTION--*/
@@ -1112,11 +1113,11 @@ color: #fefdfd;
   
   .about-item {
     text-align: center;
-    font-size: 25px;
+    font-size: 16px;
   }
   
   .about-image {
-    width: 17vmax;
+    width: 10vmax;
   }
   
   .text-about {
@@ -1134,12 +1135,12 @@ color: #fefdfd;
   }
 
   .me-image{
-    width: 35vmax;
+    width: 20vmax;
   }
   
   .me-item {
     padding: 30px;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     justify-content: center;
   }
@@ -1220,10 +1221,12 @@ color: #fefdfd;
   
   
   .footer .footer-right {
+    visibility: hidden;
     float: right;
   }
   
   .footer .footer-right p {
+    visibility: hidden;
     display: inline-block;
     vertical-align: top;
     margin: 15px 42px 0 0;
@@ -1231,6 +1234,7 @@ color: #fefdfd;
   }
   
   .footer form {
+    visibility: hidden;
     display: inline-block;
   }
   
