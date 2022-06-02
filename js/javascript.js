@@ -4,44 +4,44 @@ Da : 2130875
 Session : H2022
 */
 
-function rememberLanguage(){
+function rememberLanguage() {
     if (localStorage.getItem("EN") === "true") {
         document.getElementById("EN").disabled = true;
         changeTextEnglish();
-        
+
     } else {
         document.getElementById("FR").disabled = true;
     }
 
-    if(localStorage.getItem("25") == "true"){
+    if (localStorage.getItem("25") == "true") {
         display25();
-    } else if(localStorage.getItem("50") == "true"){
+    } else if (localStorage.getItem("50") == "true") {
         display50();
-    } else if(localStorage.getItem("75") == "true"){
+    } else if (localStorage.getItem("75") == "true") {
         display75();
-    }else {
-    display100();
+    } else {
+        display100();
     }
-    
+
 }
-function date(){
+function date() {
     var date = (new Date()).toISOString().split("T")[0];
     document.getElementById("date").innerHTML = "date : " + date;
 }
 
-function goTop(){
- window.scrollTo({top : 0, behavior:"smooth"});
+function goTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 function display25() {
     localStorage.setItem("25", "true");
-    if (localStorage.getItem("100") === "true"){
+    if (localStorage.getItem("100") === "true") {
         localStorage.removeItem("100");
     }
-    if (localStorage.getItem("75") === "true"){
+    if (localStorage.getItem("75") === "true") {
         localStorage.removeItem("75");
     }
-    if (localStorage.getItem("50") === "true"){
+    if (localStorage.getItem("50") === "true") {
         localStorage.removeItem("50");
     }
 
@@ -62,25 +62,25 @@ function display25() {
     document.getElementById("text7").style.filter = "brightness(25%)";
     document.getElementById("text8").style.filter = "brightness(25%)";
     document.getElementById("text9").style.filter = "brightness(25%)";
-    document.getElementById("text10").style.filter= "brightness(25%)";
+    document.getElementById("text10").style.filter = "brightness(25%)";
     document.getElementById("text11").style.filter = "brightness(25%)";
     document.getElementById("text12").style.filter = "brightness(25%)";
     document.getElementById("text13").style.filter = "brightness(25%)";
     document.getElementById("text14").style.filter = "brightness(25%)";
     document.getElementById("text15").style.filter = "brightness(25%)";
-    
+
 }
 
- 
+
 function display50() {
     localStorage.setItem("50", "true");
-    if (localStorage.getItem("100") === "true"){
+    if (localStorage.getItem("100") === "true") {
         localStorage.removeItem("100");
     }
-    if (localStorage.getItem("75") === "true"){
+    if (localStorage.getItem("75") === "true") {
         localStorage.removeItem("75");
     }
-    if (localStorage.getItem("25") === "true"){
+    if (localStorage.getItem("25") === "true") {
         localStorage.removeItem("25");
     }
 
@@ -112,13 +112,13 @@ function display50() {
 
 function display75() {
     localStorage.setItem("75", "true");
-    if (localStorage.getItem("100") === "true"){
+    if (localStorage.getItem("100") === "true") {
         localStorage.removeItem("100");
     }
-    if (localStorage.getItem("25") === "true"){
+    if (localStorage.getItem("25") === "true") {
         localStorage.removeItem("25");
     }
-    if (localStorage.getItem("50") === "true"){
+    if (localStorage.getItem("50") === "true") {
         localStorage.removeItem("50");
     }
     document.getElementById("vint-cinq").disabled = false;
@@ -148,13 +148,13 @@ function display75() {
 
 function display100() {
     localStorage.setItem("100", "true");
-    if (localStorage.getItem("25") === "true"){
+    if (localStorage.getItem("25") === "true") {
         localStorage.removeItem("25");
     }
-    if (localStorage.getItem("75") === "true"){
+    if (localStorage.getItem("75") === "true") {
         localStorage.removeItem("75");
     }
-    if (localStorage.getItem("50") === "true"){
+    if (localStorage.getItem("50") === "true") {
         localStorage.removeItem("50");
     }
     document.getElementById("vint-cinq").disabled = false;
@@ -185,31 +185,31 @@ function display100() {
 
 
 function English() {
-    
+
     document.documentElement.setAttribute("lang", 'en');
     localStorage.setItem("EN", "true");
-    if (localStorage.getItem("FR") === "true"){
+    if (localStorage.getItem("FR") === "true") {
         localStorage.removeItem("FR");
     }
     document.getElementById("EN").disabled = true;
     document.getElementById("FR").disabled = false;
     fadeOutText();
     delay(1000).then(() => fadeInText());
-    delay(600).then(() => changeTextEnglish()); 
+    delay(600).then(() => changeTextEnglish());
     goTop();
 }
 
 function Francais() {
     document.documentElement.setAttribute("lang", 'fr');
     localStorage.setItem("FR", "true");
-    if (localStorage.getItem("EN") === "true"){
+    if (localStorage.getItem("EN") === "true") {
         localStorage.removeItem("EN");
     }
     document.getElementById("FR").disabled = true;
     document.getElementById("EN").disabled = false;
     fadeOutText();
     delay(1000).then(() => fadeInText());
-    delay(600).then(() => changeTextFrancais()); 
+    delay(600).then(() => changeTextFrancais());
     goTop();
 }
 
@@ -219,7 +219,7 @@ function delay(time) {
     return new Promise(resolve => setTimeout(resolve, time));
 }
 
-function changeTextEnglish(){
+function changeTextEnglish() {
     document.getElementById("galerie1").innerHTML = "GALLERY";
     document.getElementById("galerie2").innerHTML = "GALLERY";
     document.getElementById("galerie3").innerHTML = "GALLERY";
@@ -245,24 +245,24 @@ function changeTextEnglish(){
     document.getElementById("envoyer1").innerHTML = "SEND";
     document.getElementById("text1").innerHTML = "This picture is one of the hardest i have ever took. I had to hide for hours to wait for any kind of animal to pass near me. After hours, an animal came by and i took this picture. - Antoine";
     document.getElementById("text2").innerHTML = "This picutre was taken on a beach, while i was in familly vacation with my two boys and my beautiful wife. It was one of the only vacation we took in our relationship, this moment was on of the best in my life... -William";
-    document.getElementById("text3").innerHTML = "1";
-    document.getElementById("text4").innerHTML = "1";
-    document.getElementById("text5").innerHTML = "1";
-    document.getElementById("text6").innerHTML = "1";
-    document.getElementById("text7").innerHTML = "1";
-    document.getElementById("text8").innerHTML = "1";
-    document.getElementById("text9").innerHTML = "1";
-    document.getElementById("text10").innerHTML = "1";
-    document.getElementById("text11").innerHTML = "1";
-    document.getElementById("text12").innerHTML = "1";
-    document.getElementById("text13").innerHTML = "1";
-    document.getElementById("text14").innerHTML = "1";
-    document.getElementById("text15").innerHTML = "1";
-    
+    document.getElementById("text3").innerHTML = "I took this picture at the start of this summer. I was coming back from shopping with my mom, and she was driving our mini cooper for the first time of the year, the sun was beautiful, we had the wind in our hair. It was a beautiful day. -Jhone";
+    document.getElementById("text4").innerHTML = "This photo is a photo of the first house I lived in. L'Assomption is one of the places where I have the most memories of my childhood. I spent all my time here as a kid playing with my friends every day. -Jessica";
+    document.getElementById("text5").innerHTML = "This photo was taken with a camera older than me. A camera from the 80s with 35mm film I love the effect that cameras like this bring to the photo. It looks like the photo literally comes to life. - Carolle";
+    document.getElementById("text6").innerHTML = "This photo was taken during a spa evening in my backyard, I had been trying to take a photo of the sky for 3 days now, but the first 2 days were cloudy the third, the weather was perfect so I was able to take this beautiful photo. - Carolle";
+    document.getElementById("text7").innerHTML = "This camera comes from the 80s. It may not have the same technology as the newer cameras, but the photos that it makes are a masterpiece and are simply magnificent. The depth of the photos from this camera is so beautiful that it looks like the real thing.";
+    document.getElementById("text8").innerHTML = "This camera is the most expensive of all our equipment, the camera costs 3000$. This price is understandable because it is the camera that takes pictures with the highest quality in the world. This camera can zoom for miles and the quality would still be clear.";
+    document.getElementById("text9").innerHTML = "The Nikon L35 AF film camera has been dubbed best in class due to its high quality and reliable multi-coated glass lens. This point and shoot type camera is one of the best in the business.";
+    document.getElementById("text10").innerHTML = "My name is Carolle, I have been part of Jhone's photography for 5 years now and my specialty is to photograph cars.";
+    document.getElementById("text11").innerHTML = "My name is William, I have been part of Jhone's photography for 6 years now and I love photographing the stars.";
+    document.getElementById("text12").innerHTML = "My name is Antoine, I have been part of Jhone's photography for 2 years now and I love photographing nature and animals.";
+    document.getElementById("text13").innerHTML = "My name is Jessica, I have been part of Jhone's photography for 8 years and I mainly photograph cities";
+    document.getElementById("text14").innerHTML = "This video demonstrates how our photographers proceed every day to take beautiful photos. Some take longer to take pictures and others less but in the end our results are always the best.";
+    document.getElementById("text15").innerHTML = "My name is Jhone and I am the creator of Jhone's photography. This group was created 10 years ago with the aim of bringing together the best photographers on this planet. this goal has still not been achieved, but we are working hard every day to try to achieve it.";
+
 }
 
 
-function changeTextFrancais(){
+function changeTextFrancais() {
     document.getElementById("galerie1").innerHTML = "GALERIE";
     document.getElementById("galerie2").innerHTML = "GALERIE";
     document.getElementById("galerie3").innerHTML = "GALERIE";
@@ -287,10 +287,10 @@ function changeTextFrancais(){
     document.getElementById("envoyer1").innerHTML = "ENVOYER";
     document.getElementById("text1").innerHTML = "Cette photo est une de mes photo les plus dur que j’ai pris. J'ai du me cacher pendant des heures dans la foret en attendant qu’un animal interagissent avec mes alentours et quand cela est finalement arrivé j’ai pris cette photo. - Antoine";
     document.getElementById("text2").innerHTML = "Cette photo a été pris sur une plage dans mon voyage de famille avec mes deux gosses et ma magnifique femme. C'était l'un des seul voyages que nous avons fait de tout notre relation amoureuse ce moment était le plus beau jours de ma vie... -William";
-    document.getElementById("text3").innerHTML = "Cette photo a été pris en juin 2008, cette photo représente beaucoup pourmoi car ces une photo de mon père avec sa voiture de rêve. Cette photo m’a pris des millionsd’essaie avant de l’avoir parfaitement. Mon père la accrocher dans son bureau avant de mourirces donc pour sa que j’adore autant cette photo. - Jhone";
-    document.getElementById("text4").innerHTML = "Cette photo est une photo de ma ville natale, cette place est la place ou j'ai le plus de souvenir de mon enfance. J'ai passer tout mon temps ici en tant qu'adolescante a faire du skateboard tout les jours. -Jessica";
+    document.getElementById("text3").innerHTML = "Cette photo est une photo que j'ai pris au début de cette été. Je revenais de magasiner avec ma mère et elle conduisait notre mini cooper pour la première fois de l’année, le soleil était magnifique, nous avions les cheveux dans le vent. C’était une belle journée. -Jhone";
+    document.getElementById("text4").innerHTML = "Cette photo est une photo de la première maison dans l'aquelle j'ai vécu. L'Assomption une des place ou j'ai le plus de souvenir de mon enfance. J'ai passer tout mon temps ici en tant qu'enfant a jouer avec mes amis tout les jours. - Jessica";
     document.getElementById("text5").innerHTML = "Cette photo a été pris avec une caméra plus vielle que moi. Une camera des années 80 avec du film 35mm j'adore l'effet que les caméra comme celle ci amène au photo. On dirait que la photo prend vie litéralement. - Carolle";
-    document.getElementById("text6").innerHTML = "Cette photo a été pris pendant une soirée de camping. Cela fesait mainteant 3 jours que j'était présent sur place, mais les 2 premier jours on été nuageux le troisième, la météo était parfaite j'ai donc pu prendre cette magnifique photo. - Carolle";
+    document.getElementById("text6").innerHTML = "Cette photo a été pris pendant une soirée de spa dans ma cours, Cela fesait mainteant 3 jours que j'essayais de prendre une photo du ciel, mais les 2 premier jours on été nuageux le troisième, la météo était parfaite j'ai donc pu prendre cette magnifique photo. - Carolle";
     document.getElementById("text7").innerHTML = "Cette caméra vien des années 80. Elle n'a peu-etre pas la meme technologie que les nouvelles caméras, mais les photo qui sorte de se chef d'oeuvre sont tout simplement magnifique. La profondeur des photos de cette caméra est tellement belle qu'on dirait que c'est la réalité.";
     document.getElementById("text8").innerHTML = "Cette caméra est la plus cher de tout notre équipement, la caméra coute 3000$. Ce prix est comprenable car elle est la caméra qui prend des photo avec la plus grand qualité au monde. Cette caméra peut zoomer sur des kilomètre et la qualité serais encore clair.";
     document.getElementById("text9").innerHTML = "L'appareil argentique Nikon L35 AF a été surnommé Pikaichi ou top-notch (excellent) en raison de sa haute qualité et de la fiabilité de son objectif en verre multicouches. Cette caméra de type point and shoot est l'une des meilleurs dans le millieux.";
@@ -300,21 +300,21 @@ function changeTextFrancais(){
     document.getElementById("text13").innerHTML = "Je m’appelle Jessica, je fait parti de Jhone’s photography depuis 8 ans et je photographie majoritairement des villes."
     document.getElementById("text14").innerHTML = "Cette vidéo démontre comment nos photographe procède chaque jours pour prendre des magnifique photo. Certain prennent plus de temps a prendre des photos et d’autre moins mais a la fin nos résultat sont toujours les meilleurs.";
     document.getElementById("text15").innerHTML = "Je m’appelle Jhone et je suis le créateur de Jhone’s photography. Ce groupe a été créer il y a maintenant 10 ans ayant comme but de reunir les meilleur photographe sur cette planète. ce but n’a toujours pas été atteint,mais nous travaillons fort chaque jours pour essayer de l’atteindre.";
-    
+
 }
 
 
-function fadeOutText(){
+function fadeOutText() {
     document.getElementById("galerie1").style.transition = "opacity 0.65s linear 0s";
-	document.getElementById("galerie1").style.opacity = 0;
+    document.getElementById("galerie1").style.opacity = 0;
     document.getElementById("galerie2").style.transition = "opacity 0.65s linear 0s";
-	document.getElementById("galerie2").style.opacity = 0;
+    document.getElementById("galerie2").style.opacity = 0;
     document.getElementById("galerie3").style.transition = "opacity 0.65s linear 0s";
-	document.getElementById("galerie3").style.opacity = 0;
+    document.getElementById("galerie3").style.opacity = 0;
     document.getElementById("galerie4").style.transition = "opacity 0.65s linear 0s";
-	document.getElementById("galerie4").style.opacity = 0;
+    document.getElementById("galerie4").style.opacity = 0;
     document.getElementById("moi1").style.transition = "opacity 0.65s linear 0s";
-	document.getElementById("moi1").style.opacity = 0;
+    document.getElementById("moi1").style.opacity = 0;
     document.getElementById("moi2").style.transition = "opacity 0.65s linear 0s";
     document.getElementById("moi2").style.opacity = 0;
     document.getElementById("moi3").style.transition = "opacity 0.65s linear 0s";
@@ -379,20 +379,20 @@ function fadeOutText(){
     document.getElementById("text14").style.opacity = 0;
     document.getElementById("text15").style.transition = "opacity 0.65s linear 0s";
     document.getElementById("text15").style.opacity = 0;
-    
+
 }
 
-function fadeInText(){
+function fadeInText() {
     document.getElementById("galerie1").style.transition = "opacity 0.65s linear 0s";
-	document.getElementById("galerie1").style.opacity = 1;
+    document.getElementById("galerie1").style.opacity = 1;
     document.getElementById("galerie2").style.transition = "opacity 0.65s linear 0s";
-	document.getElementById("galerie2").style.opacity = 1;
+    document.getElementById("galerie2").style.opacity = 1;
     document.getElementById("galerie3").style.transition = "opacity 0.65s linear 0s";
-	document.getElementById("galerie3").style.opacity = 1;
+    document.getElementById("galerie3").style.opacity = 1;
     document.getElementById("galerie4").style.transition = "opacity 0.65s linear 0s";
-	document.getElementById("galerie4").style.opacity = 1;
+    document.getElementById("galerie4").style.opacity = 1;
     document.getElementById("moi1").style.transition = "opacity 0.65s linear 0s";
-	document.getElementById("moi1").style.opacity = 1;
+    document.getElementById("moi1").style.opacity = 1;
     document.getElementById("moi2").style.transition = "opacity 0.65s linear 0s";
     document.getElementById("moi2").style.opacity = 1;
     document.getElementById("moi3").style.transition = "opacity 0.65s linear 0s";
@@ -456,7 +456,7 @@ function fadeInText(){
     document.getElementById("text14").style.transition = "opacity 0.65s linear 0s";
     document.getElementById("text14").style.opacity = 1;
     document.getElementById("text15").style.transition = "opacity 0.65s linear 0s";
-    document.getElementById("text15").style.opacity = 1; 
+    document.getElementById("text15").style.opacity = 1;
     document.getElementById("statsEN").style.transition = "opacity 0.65s linear 0s";
     document.getElementById("statsEN").style.opacity = 1;
     document.getElementById("statsFR").style.transition = "opacity 0.65s linear 0s";
